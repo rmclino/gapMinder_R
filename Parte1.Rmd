@@ -1,0 +1,14 @@
+# UDACITY DATA SCIENCE
+
+## Estudo de dados do GapMinder usando R
+
+### 1. Carregando os Dados
+
+```{r}
+setwd('C:\\Users\\Ricardo\\Documents\\gapMinder_R\\Data')
+list.files()
+```
+```{r}
+
+```
+
