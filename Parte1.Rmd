@@ -5,10 +5,19 @@
 ### 1. Carregando os Dados
 
 ```{r}
-setwd('C:\\Users\\Ricardo\\Documents\\gapMinder_R\\Data')
-list.files()
+data_files <- list.files('C:\\Users\\Ricardo\\Documents\\gapMinder_R\\Data')
+data_files
 ```
 ```{r}
-
+data_path <- 'C:\\Users\\Ricardo\\Documents\\gapMinder_R\\Data'
+setwd(data_path)
+df_corruption     <- read.table(data_files[1][1])
+df_life_exp       <-read.table(data_files[2][1])
+df_oil_prod       <- read.table(data_files[3][1],sep=",")
+df_population     <- read.table(data_files[4][1])
+df_education      <- read.table(data_files[5][1])
+df_gdpPPP         <- read.table(data_files[6][1])
+df_numberBillionars <- read.csv(data_files[7][1])
+df_polution_co2     <- read.csv(data_files[7][1])
 ```
 
